@@ -1,0 +1,212 @@
+/* General Styling */
+html, body {
+    height: 100%; /* Make html and body full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    font-family: Arial, sans-serif;
+    background-image: url(Img/nor1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    backdrop-filter: brightness(0.9);
+}
+
+/* Main content should grow and take available space */
+.products-container {
+    flex: 1; /* Allow this section to grow */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.navbar img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    font-size: x-large;
+    background-color: transparent;
+    color: #222;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    width: 300px;
+    background-color: transparent;
+    transition: box-shadow 0.3s, width 0.3s;
+}
+
+.search-bar:focus {
+    box-shadow: orange;
+    width: 400px;
+}
+
+.cart-icon {
+    font-size: 24px;
+    position: relative;
+}
+
+.cart-icon img {
+    width: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Products Container */
+.products-container {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+    padding: 20px;
+}
+
+/* Products Section */
+.products-category {
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 0px;
+    box-shadow:transparent;
+    flex: 2 2 200px; /* Allow items to grow and shrink */
+    margin: 10px; /* Space between items */
+    text-align: center;
+}
+
+.products-category h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color:black;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width:auto; /* Adjust width as needed */
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    max-width:max-content;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    align-items: end;
+}
+
+.footer-content {
+    
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
